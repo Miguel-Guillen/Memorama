@@ -1,5 +1,6 @@
 const tablero = document.getElementById("tablero");
 const buttonStart = document.getElementById('start');
+const news = document.getElementById('new');
 
 let cards = [];
 let selected = [];
@@ -30,7 +31,7 @@ const newGame = () => {
                         ${icons[img[gamePlus]]}
                     </div>
                     <div class="front card-back">
-                        <i class="far fa-question-circle"></i>
+                        <img class="img-fluid" src="img/Card.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -78,14 +79,15 @@ const deselect = (cardsSelected) => {
             selected = [];
             pairs ++;
             if(pairs == 8){
-                tablero.innerHTML = `
-                    <div class="text-center">
+                tablero.innerHTML = ``;
+                news.innerHTML = `
+                    <div class="row text-center text-white">
                         <h3>Juego terminado!</h3>
                         <h5>Gracias por jugar</h5>
                         <p>Intentos realizados: <span class="text-muted fw-bold">${tries}</span></p>
+                        <button id="start" class="btn btn-secondary btn-lg mt-2" onclick="newGame()">Empezar</button>
                     </div>
                 `;
-                buttonStart.style.display = 'block';
             }
         }
     }, 1000);
