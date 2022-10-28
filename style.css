@@ -43,13 +43,9 @@
     justify-content: center;
     align-items: center;
 }
-.front img {
+.front img, .back img {
     height: auto;
     width: 76%;
-}
-.back img {
-    height: auto;
-    width: 80%;
 }
 
 .back {
