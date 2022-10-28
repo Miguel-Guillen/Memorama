@@ -24,8 +24,8 @@
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
-    width: 8.5vw;
-    height: 21.5vh;
+    width: 9vw;
+    height: 22vh;
     min-width: 100px;
 }
 .cards {
@@ -44,8 +44,12 @@
     align-items: center;
 }
 .front img {
-    height: 90%;
-    width: auto;
+    height: auto;
+    width: 76%;
+}
+.back img {
+    height: auto;
+    width: 80%;
 }
 
 .back {

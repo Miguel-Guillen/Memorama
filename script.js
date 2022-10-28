@@ -71,8 +71,14 @@ const deselect = (cardsSelected) => {
             selected = [];
             let cardOne = document.getElementById("cards-" + cardsSelected[0])
             let cardTwo = document.getElementById("cards-" + cardsSelected[1])
-            cardOne.style.transform = "rotateY(0deg)";
-            cardTwo.style.transform = "rotateY(0deg)";
+            card1.style.background = "crimson";
+            card2.style.background = "crimson";
+            setTimeout(() => {
+                cardOne.style.transform = "rotateY(0deg)";
+                cardTwo.style.transform = "rotateY(0deg)";
+                card1.style.background = "#5f8697";
+                card2.style.background = "#5f8697";
+            }, 800)
         }else{
             card1.style.background = "green";
             card2.style.background = "green";
