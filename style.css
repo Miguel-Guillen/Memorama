@@ -24,9 +24,9 @@
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
-    width: 9vw;
-    height: 22vh;
-    min-width: 100px;
+    width: 120px;
+    height: 160px;
+    /* min-width: 100px; */
 }
 .cards {
     position: relative;
@@ -45,7 +45,7 @@
 }
 .front img, .back img {
     height: auto;
-    width: 76%;
+    width: 80%;
 }
 
 .back {

@@ -1,6 +1,7 @@
 const tablero = document.getElementById("tablero");
 const buttonStart = document.getElementById('start');
 const news = document.getElementById('new');
+const title = document.getElementById('title');
 
 let cards = [];
 let selected = [];
@@ -11,6 +12,7 @@ let img = [];
 
 const newGame = () => {
     buttonStart.style.display = 'none';
+    title.innerHTML = 'Intentos: ' + tries;
     selected = [];
     cards = [];
     pairs = 0;
@@ -65,6 +67,7 @@ const select = (card) => {
 const deselect = (cardsSelected) => {
     setTimeout(() => {
         tries ++;
+        title.innerHTML = 'Intentos: ' + tries;
         let card1 = document.getElementById("back-" + cardsSelected[0])
         let card2 = document.getElementById("back-" + cardsSelected[1])
         if(card1.innerHTML != card2.innerHTML){
